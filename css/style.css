@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+    background: rgb(193, 62, 62);
+    background: linear-gradient( 139deg, rgba(193, 62, 62, 1) 0%, rgba(230, 179, 50, 1) 100%);
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    color: white;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: white;
+    padding: 0.2em;
+    cursor: pointer;
+    text-align: center;
+}
+
+header>h1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+    height: 2px;
+    background-color: white;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+header>h1:hover::before {
+    width: 80%;
+}
+
+.container-add-to-do-list {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.container-add-to-do-list input {
+    width: 35%;
+    height: 40px;
+    padding: 0 0 0 10px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+}
+
+.container-add-to-do-list .add-input {
+    background-color: rgb(233, 153, 61);
+    width: 40px;
+    height: 40px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.container-add-to-do-list .delete-input {
+    background-color: rgb(236, 44, 44);
+    width: 40px;
+    height: 40px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.container-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.list-container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.list-container input {
+    width: 32%;
+    height: 40px;
+    padding: 0 0 0 10px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+}
+
+.class-check {
+    background-color: #3ec282;
+    width: 40px;
+    height: 40px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.my-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.class-edit {
+    background-color: rgb(86, 62, 193);
+    width: 40px;
+    height: 40px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.class-del {
+    background-color: #e72727;
+    width: 40px;
+    height: 40px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .list-container input {
+        width: 60%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+    .container-add-to-do-list input {
+        width: 72%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .list-container input {
+        width: 50%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+    .container-add-to-do-list input {
+        width: 60%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .list-container input {
+        width: 70%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+    .container-add-to-do-list input {
+        width: 78%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 915px) {
+    .list-container input {
+        width: 65%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+    .container-add-to-do-list input {
+        width: 75%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 732px) {
+    .list-container input {
+        width: 60%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .list-container input {
+        width: 65%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+    .container-add-to-do-list input {
+        width: 70%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .list-container input {
+        width: 60%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+    .container-add-to-do-list input {
+        width: 70%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+}
